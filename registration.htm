@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>	
+	<meta charset="utf-8">
+	<title> Registration </title>
+</head>
+<body>
+	<h1>
+	<a href ="index.htm" >	
+		<font size="4"> HOME PAGE| </a>
+	<a href="films.htm"  > 
+		<font size="4" >FILMS| </a> 
+	<a href="books.htm">
+		<font size="4"> BOOKS| </a>
+	<a href="musics.htm">
+		<font size="4"> MUSICS|</a>
+	<a href="usefullinks.htm">
+		<font size="4">USEFUL LINKS|</a>
+	<a href="contactme.htm">
+		<font size="4">CONTACT ME|</a>
+	<a href="registration.htm">
+		<font size="6">REGISTER|</a> 
+	</h1>
+	
+		<form action="test.php" enctype="multipart/form&shy;data" method="post">
+		<fieldset> 
+		<legend> Registration Form <font size="3"></legend>
+		<label for ="theName"> Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     </label>
+		<input type="text" name="name" id="theName"> <br>
+		<label for ="theSurname"> Surname: &nbsp;&nbsp;  </label>
+		<input type="text" name="surname" id="theSurname"> <br>
+		<label for="thePassword"> Password: &nbsp;</label>  
+		<input type="password" name="userpassword" > <br>
+		<label for="theEmail"> Email :&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</label>
+		<input type="email" name="email" id="theEmail"> <br>
+		<label for="theDate"> Date of Birth : &nbsp;&nbsp; </label>
+		<input type="date" id="theDate" name="date"> <br>
+		<label for="genders"> Gender :</label>
+		<select "gender">
+			<option value="Female"> Female </option>
+			<option value="Male"> Male </option>
+		</select> <br>
+		<p> About Me  
+			<textarea rows="5" cols="60" name="aboutme">
+		</textarea></p><br>
+		<p> Upload Your Photo
+		<input type="file" name="fileToUpload"><br><br>
+		<label for="theCheckboxes"> Mark Your Interests </label>
+		<input type="checkbox" name="automobiles" id="theCheckboxes">
+		Classic Automobiles
+		<input type="checkbox" name="dance" id="theCheckboxes">
+		Dance <br>
+		<input type="checkbox" name="books" id="theCheckboxes">
+		Books
+		<input type="checkbox" name="healhty" id="theCheckboxes">
+		Healthy Life <br>
+		<input type="checkbox" name="science" id="theCheckboxes">
+		Science 
+		<input type="checkbox" name="socialmedia" id="theCheckboxes">
+		Social Media <br>
+		<input type="checkbox" name="films" id="theCheckboxes">
+		Films
+		<input type="checkbox" name="music" id="theCheckboxes">
+		Music <br>
+		<input type="checkbox" name="pictures" id="theCheckboxes">
+		Take Pictures 
+		<input type="checkbox" name="sports" id="theCheckboxes">
+		Sports
+		</fieldset>
+		<center> 
+		<button onclick="myFunction()">Send</button>
+		<script>
+		function myFunction() {
+			alert("Thanks for registration!");
+		}
+		</script><br> <br>
+	<input type ="submit" value="Reset">
+
+</body>
+</html>
